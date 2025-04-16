@@ -1,0 +1,29 @@
+**master slave d flipflop**
+.subckt not_gate 1 2 3 
+.model nmod nmos level=54 version=4.7
+M1 3 1 0 0 nmod w=10u l=1u
+.model pmod pmos level=54 version=4.7
+M2 3 1 2 2 pmod w=10u l=1u
+.ends
+vdd 2 0 dc 5v
+v1 12 0 dc 0v
+v2 11 0 pulse 0 5 0 0 0 10 20
+v3 4 0  dc 5v
+.model nmod nmos level=54 version=4.7
+.model pmod pmos level=54 version=4.7
+M3 5 11 4 4 nmod w=10u l=1u
+x1 5 2 6 not_gate
+x2 6 2 7 not_gate
+M4 7 11 5 5 pmod w=10u l=1u
+M5 8 11 7 7 pmod w=10u l=1u
+x3 8 2 9 not_gate
+x4 9 2 10 not_gate
+M6 10 11 8 8 nmod w=10u l=1u
+M7 5 12 0 0 nmod w=10u l=1u
+M8 8 12 0 0 nmod w=10u l=1u
+.tran 0.1 400
+.control
+run
+plot  v(10) v(4)
+.endc
+.end
