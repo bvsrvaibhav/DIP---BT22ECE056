@@ -1,4 +1,24 @@
-Work 1: Automatic Gain Control
+[Slide 1: Title Slide / Introduction]
+
+"Good [morning/afternoon], everyone. My name is B. V. Sriram Vaibhav from IIIT Nagpur, and today I am presenting the work I have done during my internship at NRSC, ISRO, under the guidance of my external mentor Suman Bandi and my faculty mentors Dr. Paritosh D. Peshwe and Dr. Rashmi Ranjan. My internship spanned five months, from May to October 2025."
+
+[Slide 2: About Organization]
+
+"To begin, let me briefly introduce the organization where I interned. The National Remote Sensing Centre, or NRSC, is a crucial unit of ISRO, the Indian Space Research Organization. NRSC specializes in satellite data reception, processing, and distribution, supporting various national applications. It plays a vital role in remote sensing, satellite communication, and ground station operations, contributing to diverse sectors such as agriculture, forestry, water resources, disaster management, and urban planning. The organization also focuses on advanced research in signal processing, communication systems, and geospatial technologies."
+
+[Slide 3: About My Role]
+
+"My internship role was that of a Project Student Intern, focusing on FPGA and digital communication systems. During my time at NRSC, I had the opportunity to work on digital communication systems for satellite applications, involving technologies like phase-locked loops and code division multiple access. I designed and implemented symbol synchronization algorithms using Zero-Crossing and Gardner Timing Error Detectors, developed an automatic gain control system with 15% faster convergence, and worked on phase ambiguity resolution using both differential and unique-word methods.
+
+Additionally, I configured ADC-DAC loopback systems on the Zynq UltraScale+ RFSoC ZCU208 board, and set up and tested the ADRV9361-Z7035 SDR board using Vivado and reference IPs."
+
+[Slide 4: Project Timeline]
+
+"This slide shows the timeline of my project and the different milestones I achieved. I started with developing Automatic Gain Control, then moved on to symbol synchronization, and phase ambiguity resolution using two different techniques. I also worked on implementing and testing IP blocks on the ADRV9361 board, set up an ADC-DAC loopback on the ZCU208 board, and I am currently working on Viterbi Decoding and Reed-Solomon Decoding, which are ongoing."
+
+
+
+Work 1: Automatic Gain Control  
 "First, let's talk about Automatic Gain Control, or AGC. The main objective here is to maintain a constant signal amplitude at the receiver. This is critical because wireless channels are unpredictable—signals can fade, get noisy, or vary in strength. Without AGC, a weak signal might be too low to process, while a strong one could saturate the system."
 
 "To solve this, I implemented a conventional AGC loop using feedback. The core principle is to measure the incoming signal's power and compare it to a reference level. If the signal is too strong, the gain is reduced; if it's too weak, the gain is increased. This feedback loop constantly adjusts to stabilize the output power."
