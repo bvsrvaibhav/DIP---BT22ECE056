@@ -1,0 +1,325 @@
+
+1. Can you briefly introduce yourself?
+2. What motivated you to pursue VLSI and Digital Design as your career path?
+3. Walk me through your academic background and key achievements at MNIT Jaipur.
+4. What are your areas of interest in VLSI?
+5. Why did you choose SystemVerilog and UVM for verification?
+
+Round 1: Basics (Core VLSI & Digital Logic):
+
+6. Explain the difference between blocking and non-blocking assignments in Verilog.
+7. What is metastability and how do we handle it in CDC (Clock Domain Crossing)?
+8. Describe setup and hold time violations in digital circuits.
+9. What is the difference between synchronous and asynchronous FIFOs?
+10. Explain static timing analysis (STA) – what parameters are checked?
+
+Round 2: Projects (From My Resume):
+
+11. How did you design and verify the Router 1x3 module using UVM?
+12. Describe your AHB to APB bridge design – what were the main challenges?
+13. What verification strategy did you use to achieve 100% functional coverage in your Router project?
+14. How did you use tools like Synopsys VCS, QuestaSim, and ModelSim in your projects?
+15. In your CNN-based epilepsy detection project – how did you preprocess EEG data and improve accuracy?
+
+Round 3: Advanced Concepts:
+
+16. How would you implement a testbench for FIFO in SystemVerilog with constrained-random verification?
+17. What are the key differences between FPGA prototyping and ASIC implementation?
+18. How do you optimize RTL for synthesis using tools like Cadence Genus or Design Compiler?
+19. Can you explain the flow from RTL → GDSII in physical design?
+20. How would you handle debugging in large UVM-based projects?
+
+Round 4: HR & Personal:
+
+21. Why do you want to work in the semiconductor/VLSI industry?
+22. Tell me about your training experience at Maven Silicon and how it shaped your skills.
+23. Describe a challenging situation during your IISc CeNSE internship – how did you troubleshoot it?
+24. How do you manage time between academics, projects, and mentoring students?
+25. Where do you see yourself in the next 5 years in VLSI/EDA?
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+1. Number system conversions
+2. One's, two's complement, XS-3 code
+3. Binary to Gray and vice versa
+4. NAND and NOR as universal gates
+5. Implement gates using NAND/NOR
+6. SOP/POS to NAND/NOR implementation
+7. Full adder and subtractor concepts
+8. Look-ahead carry adder basics
+9. K-map and Tabulation minimization
+10. Boolean laws and theorems
+11. Gates using 2:1 multiplexer
+12. Function implementation using 4:1, 8:1 Mux
+13. Concept of Mux tree
+14. 4:1 Mux using 2:1 Mux
+15. Full adder using two 4:1 Mux
+16. 16:1 Mux using 2:1 Mux
+17. 2:1 Mux using tristate buffers
+18. Function implementation using 2:1 Mux
+19. Full adder using 3:8 decoder
+20. Priority encoder questions
+21. Latch vs. flip-flop
+22. Flip-flop conversions (JK↔SR, T↔D)
+23. SISO and PIPO design
+24. Cycles for Johnson, Ring, Ripple counters
+25. Up/Down and Decade counters
+26. Mod-n counter with duty cycle
+27. Sequence detector FSM (10101 etc.)
+28. Overlapping vs. non-overlapping FSM
+29. Mealy vs. Moore machines
+30. Digital design hazards
+31. Setup vs. hold time (with waveforms)
+32. Propagation vs. contamination delay
+33. Clock skew, slack, slew concepts
+34. Hold slack calculation
+35. Frequency from circuit diagrams
+36. Divide-by-2 counter
+
+Verilog/VHDL Section:
+
+37. Blocking vs. non-blocking
+38. Intra vs. inter assignment delay
+39. Task vs. function differences
+40. reg vs. wire
+41. Code-based output prediction
+42. Transport vs. inertial delay
+43. Wait statements in VHDL
+44. Async vs. sync D flip-flop code
+45. No latch inference in RTL
+46. RTL coding guidelines (Sunburst)
+47. Full-case vs. parallel-case
+48. Task calling function possibility
+49. Register swap with/without temp variable
+50. \$monitor vs. \$strobe
+51. Verilog vs. VHDL
+52. if-else vs. case synthesis
+53. Case equality vs. inequality
+54. Stratified event queue
+55. signal vs. variable (VHDL)
+56. Delta delay in VHDL
+57. VHDL modeling styles
+
+CMOS Section:
+
+58. Latch-up
+59. Body effect
+60. Stick diagrams for gates
+61. NAND preferred over NOR
+62. DRC, LVS rules
+63. CMOS fabrication basics
+64. Electromigration
+65. Domino effect
+66. Subthreshold conduction
+67. Channel length modulation
+68. BJT vs. MOSFET
+69. Parasitic and diffusion capacitance
+
+Miscellaneous Section:
+
+70. ASIC vs. FPGA flow
+71. CLB, IOB, LUTs in FPGA
+72. FIFO design (sync/async)
+73. FIFO depth calculation
+74. Reset strategies
+75. Reset recovery time
+76. Memory controller design in Verilog
+77. Cache memory: hit/miss ratio
+78. Basic Linux commands
+79. SystemVerilog fundamentals
+80. Synthesizable constructs (Verilog, VHDL)
+81. Computer architecture basics
+///////////////////////////////////////////////
+𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰 𝐄𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞 : 𝐁𝐚𝐬𝐞𝐝 𝐨𝐧 𝐑𝐞𝐬𝐮𝐦𝐞 & 𝐓𝐨𝐨𝐥𝐬 𝐔𝐬𝐞𝐝
+
+𝐑𝐨𝐥𝐞: SoC Design Intern (RTL/Digital/EDA Domain)
+
+𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰 𝐃𝐚𝐭𝐞 : Aug- 27- 2025 
+
+𝐓𝐨𝐨𝐥𝐬: Verilog, Xilinx Vivado, Electric VLSI, STA, EDA Playground, LTSpice, CMOS Design
+
+𝐑𝐨𝐮𝐧𝐝 𝐑𝐞𝐬𝐮𝐦𝐞 𝐁𝐚𝐬𝐞𝐝 : 𝐈𝐧𝐭𝐫𝐨 & 𝐅𝐨𝐮𝐧𝐝𝐚𝐭𝐢𝐨𝐧𝐬
+
+1. Tell me about your VLSI background and recent training/workshops
+2. What tools have you worked on for digital and layout design?
+3. How did you learn Verilog, and which modeling styles do you know?
+4. What’s your project experience using Electric VLSI or Vivado?
+5. Can you explain the difference between synchronous and asynchronous FIFO?
+
+𝐑𝐨𝐮𝐧𝐝 𝟏: 𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬 & 𝐈𝐦𝐩𝐥𝐞𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧
+
+6. Walk me through your UART module – FSM design, TX/RX, framing
+7. How did you design FIFO modules and test them in simulation?
+8. What was your transistor sizing approach in CMOS inverter layout?
+9. Explain the verification method for your RTL modules (testbench/sim).
+10. How did you resolve issues in LVS or DRC in Electric VLSI?
+
+𝐑𝐨𝐮𝐧𝐝 𝟐: 𝐓𝐨𝐨𝐥 𝐔𝐬𝐚𝐠𝐞 & 𝐄𝐗𝐏𝐎𝐒𝐔𝐑𝐄
+
+11. How do you handle setup and hold time checks in STA?
+12. Describe your experience with Xilinx Vivado and test waveforms
+13. How do you organize and write clean Verilog code?
+14. What’s your debug strategy when simulation fails?
+15. Compare Vivado and EDA Playground environments
+
+𝐑𝐨𝐮𝐧𝐝 𝟑: 𝐀𝐝𝐯𝐚𝐧𝐜𝐞𝐝 + 𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡 𝐓𝐨𝐩𝐢𝐜𝐬
+
+16. How does metastability affect asynchronous FIFO?
+17. What is the use of donetx/donerx in UART protocol?
+18. Discuss your research on MIMO antennas and its real-world use
+19. Explain the concept of timing violation and fixing techniques
+20. Share a project where STA or layout debugging played a major role
+
+𝐑𝐨𝐮𝐧𝐝 𝟒: 𝐇𝐑 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
+
+21. Why do you want to work in core VLSI or digital design?
+22. How do you keep your fundamentals strong?
+23. How do you manage your time between research, academics, and projects?
+24. What motivates you to learn tools like Electric VLSI or Vivado?
+25. Where do you see yourself in 5 years in the semiconductor industry?
+
+▪️Key Tech Stack
+
+1. Verilog HDL, FSM Design
+2. Static Timing Analysis (STA), CMOS Inverter
+3. Electric VLSI, Xilinx Vivado, EDA Playground
+4. Digital Design, UART, FIFO
+5. LT Spice, Python basics
+///////////////////////////////////////////////////////////
+Technical Round 1: SystemVerilog Basics
+
+1. Difference between `logic` and `wire`
+2. Blocking vs Non-blocking assignments
+3. What are interfaces in SystemVerilog?
+4. Difference between `always_comb`, `always_ff`, `always_latch`
+5. Functional coverage vs Code coverage
+6. What are assertions? Explain SVA basics
+7. What is a DPI-C call?
+
+Technical Round 2: UVM Concepts:
+
+1. UVM testbench architecture (env, agent, driver, monitor, scoreboard)
+2. What is a sequence vs sequencer?
+3. Difference between `uvm_component` and `uvm_object`
+4. Factory overrides in UVM
+5. What are phases in UVM (build, connect, run)?
+6. Difference: TLM blocking vs non-blocking transport
+7. Reuse of UVM environment across projects
+
+Technical Round 3: Debug & Assertions:
+
+1. How do you debug a failing test case?
+2. How to debug X-propagation issues?
+3. How do you handle deadlocks in testbench?
+4. Explain assertion-based verification with examples
+5. What is formal verification vs simulation-based verification?
+6. How to improve functional coverage closure?
+
+Technical Round 4: Protocols & Projects:
+
+1. Explain AHB/AXI protocol basics (handshake, burst, read/write)
+2. How do you verify a FIFO design?
+3. Testbench for UART or SPI protocol
+4. What are scoreboards and reference models?
+5. What’s the difference between directed and constrained-random tests?
+6. How to write coverage points for an FSM?
+
+Technical Round 5: Advanced DV
+
+1. Virtual sequences and their use
+2. UVM callbacks vs configuration DB
+3. What is objection mechanism in UVM?
+4. How do you scale verification for SoC level?
+5. Regressions: how to run and analyze
+6. How to ensure coverage-driven verification closure?
+7. Latest trends in DV (formal + ML-based verification)
+
+
+Extra Common Questions (All Rounds):
+
+1. Difference between RTL bugs vs testbench bugs
+2. What is random stability in SystemVerilog?
+3. Difference between immediate and concurrent assertions
+4. How do you ensure reusability of your UVM code?
+5. How do you debug coverage holes?
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Digital Design
+
+1. Number system conversions
+2. One's, two's complement, XS-3 code
+3. Binary to Gray and vice versa
+4. NAND and NOR as universal gates
+5. Implement gates using NAND/NOR
+6. SOP/POS to NAND/NOR implementation
+7. Full adder and subtractor concepts
+8. Look-ahead carry adder basics
+9. K-map and Tabulation minimization
+10. Boolean laws and theorems
+11. Gates using 2:1 multiplexer
+12. Function implementation using 4:1, 8:1 Mux
+13. Concept of Mux tree
+14. 4:1 Mux using 2:1 Mux
+15. Full adder using two 4:1 Mux
+16. 16:1 Mux using 2:1 Mux
+17. 2:1 Mux using tristate buffers
+18. Function implementation using 2:1 Mux
+19. Full adder using 3:8 decoder
+20. Priority encoder questions
+21. Latch vs. flip-flop
+22. Flip-flop conversions (JK↔SR, T↔D)
+23. SISO and PIPO design
+24. Cycles for Johnson, Ring, Ripple counters
+25. Up/Down and Decade counters
+26. Mod-n counter with duty cycle
+27. Sequence detector FSM (10101 etc.)
+28. Overlapping vs. non-overlapping FSM
+29. Mealy vs. Moore machines
+30. Digital design hazards
+31. Setup vs. hold time (with waveforms)
+32. Propagation vs. contamination delay
+33. Clock skew, slack, slew concepts
+34. Hold slack calculation
+35. Frequency from circuit diagrams
+36. Divide-by-2 counter
+37. Timing diagram analysis for flip-flops
+38. Gated clock vs. clock enable
+39. Glitch removal techniques in combinational logic
+40. Metastability in flip-flops
+41. Asynchronous FIFO pointer synchronization
+42. Gray code counter design
+43. Setup/hold violation fixes in RTL
+44. Pipeline vs. parallel execution
+45. Critical path delay calculation
+46. Low-power design techniques in RTL
+47. Clock domain crossing (CDC) methods
+48. Multi-cycle vs. single-cycle paths
+
+Verilog / VHDL / SystemVerilog:
+
+37. Blocking vs. non-blocking
+38. Intra vs. inter assignment delay
+39. Task vs. function differences
+40. reg vs. wire
+41. Code-based output prediction
+42. Transport vs. inertial delay
+43. Wait statements in VHDL
+44. Async vs. sync D flip-flop code
+45. No latch inference in RTL
+46. RTL coding guidelines (Sunburst)
+47. Full-case vs. parallel-case
+48. Task calling function possibility
+49. Register swap with/without temp variable
+50. \$monitor vs. \$strobe
+51. Verilog vs. VHDL
+52. if-else vs. case synthesis
+53. Case equality vs. inequality
+54. Stratified event queue
+55. signal vs. variable (VHDL)
+56. Delta delay in VHDL
+57. VHDL modeling styles
+58. Testbench structure in Verilog/SystemVerilog
+59. Self-checking testbench concepts
+60. Scoreboard and functional coverage basics
+61. UVM phase order and purpose
+62. Transaction-level modeling (TLM) basics
+63. Assertions (SVA) syntax and use cases
