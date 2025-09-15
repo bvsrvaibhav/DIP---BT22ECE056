@@ -1,0 +1,54 @@
+Work 1: Automatic Gain Control
+"First, let's talk about Automatic Gain Control, or AGC. The main objective here is to maintain a constant signal amplitude at the receiver. This is critical because wireless channels are unpredictable—signals can fade, get noisy, or vary in strength. Without AGC, a weak signal might be too low to process, while a strong one could saturate the system."
+
+"To solve this, I implemented a conventional AGC loop using feedback. The core principle is to measure the incoming signal's power and compare it to a reference level. If the signal is too strong, the gain is reduced; if it's too weak, the gain is increased. This feedback loop constantly adjusts to stabilize the output power."
+
+"The outcome was a significant improvement: I was able to reduce the convergence time by about 15% compared to default results, ensuring the system could quickly adapt to changing conditions. This also guaranteed stable input levels for the next stages of synchronization and decoding."
+
+Work 2: Symbol Synchronization
+"Next is Symbol Synchronization. After a signal has been received and its amplitude stabilized, we need to correctly sample it. The goal is to recover the exact moments in time—the sampling instants—where the signal is a clear, stable point. Without proper synchronization, the symbols smear, overlap, or rotate, leading to a high Bit Error Rate, or BER."
+
+"To achieve this, I used a Piecewise Parabolic Interpolator for precise timing adjustments. The system also includes a Zero-Crossing Timing Error Detector to estimate the sampling offset, and a Feedback Loop to continuously align the samples."
+
+"The result of this work is clearly visible in the constellation diagram. We achieved a stable, well-separated QPSK constellation, which is the direct result of having a low BER and reliable demodulation. This step is essential for accurate data recovery."
+
+Work 3: Phase Ambiguity Resolution
+"The third project focuses on Phase Ambiguity Resolution. Even after symbol synchronization, a common issue in QPSK systems is a phase offset—the entire constellation might be rotated by 90, 180, or 270 degrees. Carrier recovery locks the frequency but can leave this phase offset, causing symbol misinterpretation."
+
+"I tackled this using two methods. The first is Differential Encoding/Decoding, where information is encoded in the phase difference between consecutive symbols rather than the absolute phase. This method successfully resolved the ambiguity but could suffer from error propagation. To address that, I also used a Unique Word Method."
+
+"The Unique Word method involves inserting a known, predefined symbol sequence into the transmitted data. The receiver correlates the incoming signal with this known sequence, estimates the phase offset, and corrects the entire constellation rotation. Both methods were successful in removing phase rotations, ensuring a reliable and error-free symbol stream."
+
+Work 5: IP Blocks-ADRV-9361
+"Finally, I'll discuss my work on the ADRV-9361 platform. The objective here was to successfully configure and operate the Analog Devices System-on-Module on an FMC carrier board without external assistance. The challenge was that the board required a custom setup, including manual integration of IP blocks and configuration files."
+
+"My approach involved downloading and integrating the necessary IP cores and configuration files from GitHub. I then manually mapped these IP blocks within the design environment, ensuring all interfaces between the System-on-Module and the carrier board were correctly connected and verified."
+
+"The outcome was a complete success. I was able to bring up the board and demonstrate its full functionality. This project confirmed my ability to work with and configure complex hardware and software systems, a critical skill for developing communication platforms."
+
+Work 6: ADC-DAC Loopback on ZCU 208 Board
+"The next project involved an ADC-DAC Loopback test on a Xilinx ZCU 208 RFSoC board. The objective was to validate the board's high-speed data conversion and signal processing capabilities. This test is foundational for any RF system, ensuring that signals can be accurately converted between the analog and digital domains."
+
+"The main challenge was coordinating the configuration of multiple tools and environments to generate, capture, and analyze signals. This included setting up the analog front-end, the FPGA logic, and the software application."
+
+"To achieve this, I used several tools: TI-CS Pro for clocking and JESD204B link configuration, the Vivado Design Suite for synthesizing the FPGA logic, and Vitis IDE to develop the software application. The core principle was to generate a digital signal, convert it to analog using the DAC, loop it back into the ADC, and then route the digitized data back through the Zynq RFSoC for analysis using a Spectrum Analyzer."
+
+"This project not only validated the board's functionality but also gave me hands-on experience with the complete toolchain required for RFSoC development."
+
+Key Learnings & Future Scope
+"This final slide summarizes the key learnings from all my projects and outlines my future scope."
+
+Key Learnings
+"Through these projects, I've gained hands-on experience with real-time signal processing on FPGA/RFSoC platforms. I'm proficient in complex signal processing techniques like Phase & Symbol Synchronization and Phase Ambiguity Resolution."
+
+"I also developed strong RF Front-End Configuration skills by independently setting up and configuring boards like the ADRV9361 and ZCU208. I have significant Toolchain Expertise, specifically with TI-CS Pro, Vivado, and Vitis IDE, which are essential for hardware and software design on these platforms. I also used a Spectrum Analyzer to evaluate system performance."
+
+"Finally, a crucial takeaway was the development of systematic Debugging & Problem-Solving skills, which allowed me to resolve issues without external guidance."
+
+Future Scope
+"Looking ahead, I plan to build upon these skills in several areas. I want to implement more advanced decoding algorithms like Viterbi and Reed-Solomon decoders. I also aim to extend my work to multi-channel and high-bandwidth RF systems."
+
+"I'm also interested in automating configuration and testing using scripting, and exploring on-board machine learning accelerators for signal classification. Ultimately, I want to apply these skills to contribute to system-level satellite communication proje
+
+
+edits to be done:  work number and the image of zcu208
